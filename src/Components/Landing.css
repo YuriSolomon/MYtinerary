@@ -1,0 +1,36 @@
+#logo {
+    margin-top: 13%;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+body {
+    text-align: center;
+}
+
+#browse {
+    width: 35%;
+    margin-bottom: 3%;
+}
+
+#home {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+}
+
+#home img {
+    width: 10%;
+}
+
+.text {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.links a {
+    margin-left: 30px;
+    margin-right: 30px;
+}
