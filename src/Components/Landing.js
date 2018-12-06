@@ -1,5 +1,6 @@
 import React from 'react';
 import './Landing.css'
+import CityCycle from './CityCycle';
 
 class Landing extends React.Component{
     render() {
@@ -18,7 +19,7 @@ class Landing extends React.Component{
                 <div className="locs">
                     <h5>Popular MYtineraries</h5>
                 </div>
-                <div>{this.props.ranCity}</div>
+                <CityCycle/>
             </div>
         );
     }
