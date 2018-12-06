@@ -2,11 +2,6 @@ import React from 'react';
 import './Landing.css'
 
 class Landing extends React.Component{
-    getCity(props) {
-        var cities = ["New York","Berlin","Barcelona","Amsterdam","London","Paris"];
-        var city = cities[Math.floor(Math.random()*cities.length)];
-        props.ranCity =( <p>{city}</p> );
-    }
     render() {
         return (
             <div>
