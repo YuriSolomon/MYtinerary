@@ -39,3 +39,28 @@ body {
     text-align: left;
     margin-left: 8%;
 }
+
+.citiesCycle {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-content: center;
+}
+
+#cityCicle1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#cityCicle2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#cityCicle3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#cityCicle4 {
+    grid-area: 2 / 2 / 3 / 3;
+}

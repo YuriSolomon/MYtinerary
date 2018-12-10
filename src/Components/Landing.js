@@ -19,10 +19,12 @@ class Landing extends React.Component{
                 <div className="locs">
                     <h5>Popular MYtineraries</h5>
                 </div>
-                <CityCycle/>
-                <CityCycle/>
-                <CityCycle/>
-                <CityCycle/>
+                <div className="citiesCycle">
+                    <CityCycle id="cityCicle1"/>
+                    <CityCycle id="cityCicle2"/>
+                    <CityCycle id="cityCicle3"/>
+                    <CityCycle id="cityCicle4"/>
+                </div>
             </div>
         );
     }

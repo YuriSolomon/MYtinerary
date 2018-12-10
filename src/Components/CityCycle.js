@@ -5,43 +5,43 @@ import './CityCycle.css'
 class CityCycle extends Component {
     cities = [{
         "name": "New York",
-        "image": "../Assets/vacation.jpg"
+        "image": <img className="vacation" alt="" src={require("../Assets/vacation.jpg")}/>        
     }, 
     {
         "name": "Berlin",
-        "image": "../Assets/vacation.jpg"
+        "image": <img className="vacation" alt="" src={require("../Assets/vacation.jpg")}/>        
     },
     {
         "name": "Barcelona",
-        "image": "../Assets/vacation.jpg"
+        "image": <img className="vacation" alt="" src={require("../Assets/vacation.jpg")}/>        
     },
     {
         "name": "Amsterdam",
-        "image": "../Assets/vacation.jpg"
+        "image": <img className="vacation" alt="" src={require("../Assets/vacation.jpg")}/>        
     },
     {
         "name": "London",
-        "image": "../Assets/vacation.jpg"
+        "image": <img className="vacation" alt="" src={require("../Assets/vacation.jpg")}/>        
     },
     {
         "name": "Paris",
-        "image": "../Assets/vacation.jpg"
+        "image": <img className="vacation" alt="" src={require("../Assets/vacation.jpg")}/>        
     },
     {
         "name": "Budapest",
-        "image": "../Assets/vacation.jpg"
+        "image": <img className="vacation" alt="" src={require("../Assets/vacation.jpg")}/>        
     },
     {
         "name": "Los Angeles",
-        "image": "../Assets/vacation.jpg"
+        "image": <img className="vacation" alt="" src={require("../Assets/vacation.jpg")}/>        
     },
     {
         "name": "Las Vegas",
-        "image": "../Assets/vacation.jpg"
+        "image": <img className="vacation" alt="" src={require("../Assets/vacation.jpg")}/>
     },
     {
         "name": "Rome",
-        "image": "../Assets/vacation.jpg"
+        "image": <img className="vacation" alt="" src={require("../Assets/vacation.jpg")}/>
     }];
 
     constructor(props) {
@@ -68,11 +68,9 @@ class CityCycle extends Component {
 
     render() {
         return ( 
-            <div id="vacation" background={this.state.city.image}>
-                {this.state.city.name} 
-                {/* <img id="vacation" alt="" src={require(this.state.city.image)}/> */}
-                {/* <img id="vacation" alt="" src={require("../Assets/vacation.jpg")}/> */}
-                
+            <div className="city">
+                {this.state.city.image}
+                <div className="centered"><h3>{this.state.city.name}</h3></div>
             </div>
         );
     }

@@ -1,3 +1,17 @@
-#vacation {
-    width: 30%;
+.vacation {
+    width: 100%;
+    z-index: -20;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.city {
+    z-index: -20;
+    position: relative;
 }
