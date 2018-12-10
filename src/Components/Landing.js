@@ -20,6 +20,9 @@ class Landing extends React.Component{
                     <h5>Popular MYtineraries</h5>
                 </div>
                 <CityCycle/>
+                <CityCycle/>
+                <CityCycle/>
+                <CityCycle/>
             </div>
         );
     }
