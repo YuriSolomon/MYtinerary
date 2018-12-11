@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './Header.css'
 import Menu from './Menu';
 
-class HamburgerMenu extends React.Component{
+class Header extends React.Component{
     constructor () {
         super()
         this.state = {
@@ -15,20 +15,23 @@ class HamburgerMenu extends React.Component{
             isHidden: !this.state.isHidden
         })
     }
+
+    menuClick =() => {
+        if(document.getElementById("links").classList.contains("isActive")){
+            document.getElementById("links").classList.remove("isActive");
+        } else {
+            document.getElementById("links").classList.add("isActive");
+        }
+        
+    }
     render() {
         return (
-            <div>
-                <BrowserRouter>
-                    <div id="nav">
-                        <Link to='/menu'>
-                            <img id="menu" onClick={this.toggleHidden.bind(this)} alt="hamburger" src={require('../Assets/Hamburger.png')}/>
-                        </Link>
-                        {!this.state.isHidden && <Route path='/menu' component={Menu}/>}
-                    </div>
-                </BrowserRouter>
+            <div id="nav">
+                <img id="menu" alt="hamburger" onClick={this.menuClick} src={require('../Assets/Hamburger.png')}/>
+                <Menu/>
             </div>
         );
     }
 }
 
-export default HamburgerMenu;
+export default Header;

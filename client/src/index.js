@@ -11,9 +11,9 @@ import Cities from './Components/Cities';
 
 ReactDOM.render(
     <div>
-        <Header/>
         <BrowserRouter>
             <div>
+                <Header/>
                 <Route exact path='/' component={Landing}/>
                 <Route path='/login' component={Login}/>
                 <Route path='/signup' component={SignUp}/>

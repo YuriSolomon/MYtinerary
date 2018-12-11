@@ -8,3 +8,11 @@
     margin: 5px;
     color: black;
 }
+
+.isActive{
+    display: none;
+}
+
+.isNotActive{
+    display: block;
+}

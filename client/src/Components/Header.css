@@ -4,5 +4,6 @@
 
 #nav {
     position: fixed;
-    right: 0;
+    right: 5px;
+    top: 0;
 }
