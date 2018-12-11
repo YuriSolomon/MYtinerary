@@ -1,6 +1,7 @@
 import React from 'react';
 import './Landing.css'
 import CityCycle from './CityCycle';
+import { Link } from 'react-router-dom';
 
 class Landing extends React.Component{
     render() {
@@ -9,7 +10,7 @@ class Landing extends React.Component{
                 <a href="mailto:s.patel@ubiqum-mytinerary.com"><img id="logo" alt="logo" src={require('../Assets/MYtineraryLogo.png')} /></a>
                 <div className="text"><h5>Find your perfect trip, desinged by insiders who know and love their cities.</h5></div>
                 {/* <h2>Start browsing</h2> */}
-                <img id="browse" alt="browse" src={require('../Assets/circled-right-2.png')}/>
+                <Link to='/cities'><img id="browse" alt="browse" src={require('../Assets/circled-right-2.png')}/></Link>
                 {/* <p>Want to build you own MYtinerary?</p> */}
                 {/* <p className="links"><span><a href="">Log in</a></span> */}
                 {/* <span><a href="">Create Account</a></span></p> */}

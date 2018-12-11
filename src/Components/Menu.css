@@ -1,0 +1,10 @@
+#links {
+    background: gray;
+    border-radius: 10px;
+}
+
+#links p {
+    padding: 5px;
+    margin: 5px;
+    color: black;
+}
