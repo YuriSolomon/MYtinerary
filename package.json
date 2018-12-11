@@ -1,0 +1,41 @@
+{
+  "name": "mytinerary",
+  "version": "1.0.0",
+  "description": "",
+  "nodemonConfig": {
+    "watch": [
+      "server"
+    ],
+    "ext": "ts",
+    "ignore": [
+      "*.test.ts"
+    ],
+    "delay": "3",
+    "execMap": {
+      "ts": "ts-node"
+    }
+  },
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuriSolomon/MYtinerary.git"
+  },
+  "author": "yuri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuriSolomon/MYtinerary/issues"
+  },
+  "homepage": "https://github.com/YuriSolomon/MYtinerary#readme"
+}
