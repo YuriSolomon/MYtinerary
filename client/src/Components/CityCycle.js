@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import './CityCycle.css'
-
 
 class CityCycle extends Component {
     cities = [{
@@ -68,7 +66,7 @@ class CityCycle extends Component {
 
     render() {
         return ( 
-            <div className="city">
+            <div className="city1">
                 {this.state.city.image}
                 <div className="centered"><h3>{this.state.city.name}</h3></div>
             </div>
