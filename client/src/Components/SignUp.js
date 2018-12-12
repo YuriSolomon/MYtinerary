@@ -1,9 +1,13 @@
 import React from 'react';
+import Footer from './Footer';
 
 class SignUp extends React.Component{
     render() {
         return (
-            <div><h1>hi</h1></div>
+            <div id="signup">
+                <h1>hi</h1>
+                <Footer/>
+            </div>
         );
     }
 }

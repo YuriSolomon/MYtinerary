@@ -15,18 +15,19 @@ class Header extends React.Component{
     }
 
     menuClick =() => {
-        if(document.getElementById("links").classList.contains("isActive")){
-            document.getElementById("links").classList.remove("isActive");
+        if(document.getElementById("menu").classList.contains("isActive")){
+            document.getElementById("menu").classList.remove("isActive");
         } else {
-            document.getElementById("links").classList.add("isActive");
+            document.getElementById("menu").classList.add("isActive");
         }
         
     }
     render() {
         return (
-            <div id="nav">
-                <img id="menu" alt="hamburger" onClick={this.menuClick} src={require('../Assets/Hamburger.png')}/>
+            <div id="header">
+                <img id="menuImg" alt="hamburger" onClick={this.menuClick} src={require('../Assets/Hamburger.png')}/>
                 <Menu/>
+                <div id="userImage"><span>user image</span></div>
             </div>
         );
     }

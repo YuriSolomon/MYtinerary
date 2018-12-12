@@ -66,7 +66,7 @@ class CityCycle extends Component {
 
     render() {
         return ( 
-            <div className="city1">
+            <div className="cityCycle">
                 {this.state.city.image}
                 <div className="centered"><h3>{this.state.city.name}</h3></div>
             </div>

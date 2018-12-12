@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 
 class Cities extends React.Component{
     cities = [{
@@ -44,12 +45,13 @@ class Cities extends React.Component{
     render() {
         return (
             <div className="cities">
-                {this.cities.map(city => (
-                    <div className="city">
+                {this.cities.map((city,i) => (
+                    <div className="city" key={i}>
                         {city.image}
                         <div className="centered"><h3>{city.name}</h3></div>
                     </div>
                 ))}
+                <Footer/>
             </div>
         );
     }

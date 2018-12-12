@@ -12,7 +12,7 @@ import Cities from './Components/Cities';
 ReactDOM.render(
     <div>
         <BrowserRouter>
-            <div>
+            <div id="general">
                 <Header/>
                 <Route exact path='/' component={Landing}/>
                 <Route path='/login' component={Login}/>

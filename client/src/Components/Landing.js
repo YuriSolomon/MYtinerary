@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class Landing extends React.Component{
     render() {
         return (
-            <div>
+            <div id="landing">
                 <a href="mailto:s.patel@ubiqum-mytinerary.com"><img id="logo" alt="logo" src={require('../Assets/MYtineraryLogo.png')} /></a>
                 <div className="text"><h5>Find your perfect trip, desinged by insiders who know and love their cities.</h5></div>
                 {/* <h2>Start browsing</h2> */}
