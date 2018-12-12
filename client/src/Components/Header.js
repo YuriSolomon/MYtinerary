@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import './Header.css'
 import Menu from './Menu';
 
 class Header extends React.Component{

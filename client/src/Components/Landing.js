@@ -1,5 +1,4 @@
 import React from 'react';
-import './Landing.css'
 import CityCycle from './CityCycle';
 import { Link } from 'react-router-dom';
 
