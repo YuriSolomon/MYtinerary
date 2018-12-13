@@ -1,0 +1,1 @@
+mongoURI: 'mongodb://yurisolomon:Qq010203@ds247290.mlab.com:47290/';
