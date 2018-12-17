@@ -5,6 +5,9 @@ const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+var cors = require('cors');
+app.use(cors());
+
 app.get('/', (req, res) => {
   res.send('Hello From Express');
 });
@@ -30,8 +33,18 @@ MongoClient.connect('mongodb://yurisolomon:Qq010203@ds247290.mlab.com:47290/myti
   if (err) return console.log(err);
 });
 
+const City = require("./models/city")
+
 app.get('/cities', (req, res) => {
   dbase.collection('cities').find().toArray( (err, results) => {
     res.send(results)
+  })
+})
+
+
+app.get('/cities/all', (req, res) => {
+  City.find({}, (err, response) => {
+    if(err) console.log(err)
+    res.send(response)
   })
 })
