@@ -13,17 +13,21 @@ class Cities extends React.Component{
         fetch(`http://localhost:5000/cities/all`)
             .then(response => response.json())
             .then(json => {
-                this.setState.cities = json;
+                this.setState({cities: json});
+                console.log(this.state)
             });
-        };
+    };
 
     render() {
         return (
             <div className="cities">
-                {this.state.cities.map((city,i) => (
-                    <div className="city" key={i}>
+                {this.state.cities.map(city => (
+                    <div className="city">
                         {/* {city.image} */}
-                        <div className="centered"><h3>{city}</h3></div>
+                        {/* <div className="centered"> */}
+                            <h3>{city.name}</h3>
+                            <h5>{city.country}</h5>
+                        {/* </div> */}
                     </div>
                 ))}
                 <Footer/>
