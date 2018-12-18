@@ -21,8 +21,8 @@ class Cities extends React.Component{
     render() {
         return (
             <div className="cities">
-                {this.state.cities.map(city => (
-                    <div className="city">
+                {this.state.cities.map((city,i) => (
+                    <div className="city" key={i}>
                         {/* {city.image} */}
                         {/* <div className="centered"> */}
                             <h3>{city.name}</h3>
